@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Cliff Beach Hotel - Confirmation Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            /* Align text to the left */
+        }
+
+        .content h1 {
+            font-size: 24px;
+            color: #004080;
+            text-align: center;
+        }
+
+
+        .reservation-details h2 {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        
+
+        .content p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .reservation-details,
+        .important-info {
+            margin: 20px 0;
+        }
+
+        .reservation-details table,
+        .important-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .reservation-details table th,
+        .reservation-details table td,
+        .important-info table th,
+        .important-info table td {
+            border: 1px solid #cccccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .important-items,
+        .important-info ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .important-info ul li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        td {
+            background-color: #ffffff;
+            font-size: 14px;
+            color: #333;
+        }
+
+        td input[type="text"],
+        td input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        td input[type="text"]:focus,
+        td input[type="number"]:focus {
+            border-color: #66afe9;
+            outline: none;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #ffffff;
+        }
+
+        p {
+            text-align: left;
+            /* Align paragraphs to the left */
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        a {
+            color: #1874a3;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #f11f1f;
+        }
+
+        .footer {
+            background-color: #1874a3;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons {
+            margin-top: 10px;
+        }
+
+        .footer .social-icons a {
+            font-size: 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .footer .social-icons img {
+            width: 30px;
+            /* ปรับขนาดโลโก้ให้เหมาะสม */
+            height: 30px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="1.jpg" alt="Royal Cliff Beach Hotel Logo">
+        <div class="content">
+            <p>***Dear [Guest Name], /ตรงนี้ให้เขียนดึงชื่อลูกค้าจาก Email ที่ลูกค้าทำการจอง/</p>
+            <p>Thank you for choosing to stay at Royal Cliff Hotels Group. We are very much looking forward to welcoming
+                you
+                to our beautiful hotel.</p>
+            <p>Please spare a few minutes to check the details of your confirmed booking below, and if any part is
+                incorrect, please let us know by replying to this email or calling the reservations team on 038-250421
+                ext
+                2820. Please read through the activities section to know about our facilities.</p>
+
+            <div class="reservation-details">
+                <h2>Reservation Details:</h2>
+                <table>
+                    <tr>
+                        <th>Confirmation Number</th>
+                        <td><input type="text" name="confirmation-number" /></td>
+                    </tr>
+                    <tr>
+                        <th>Guest First Name</th>
+                        <td><input type="text" name="guest-first-name" /></td>
+                    </tr>
+                    <tr>
+                        <th>Guest Last Name</th>
+                        <td><input type="text" name="guest-last-name" /></td>
+                    </tr>
+                    <tr>
+                        <th>Arrival Date</th>
+                        <td><input type="text" name="arrival-date" /></td>
+                    </tr>
+                    <tr>
+                        <th>Departure Date</th>
+                        <td><input type="text" name="departure-date" /></td>
+                    </tr>
+                    <tr>
+                        <th>Number of night(s)</th>
+                        <td><input type="number" name="number-of-nights" /></td>
+                    </tr>
+                    <tr>
+                        <th>Hotel(s)</th>
+                        <td><input type="text" name="hotels" /></td>
+                    </tr>
+                    <tr>
+                        <th>Room Rate</th>
+                        <td><input type="text" name="room-rate" /></td>
+                    </tr>
+                    <tr>
+                        <th>Rate Inclusion</th>
+                        <td><input type="text" name="rate-inclusion" /></td>
+                    </tr>
+                    <tr>
+                        <th>Payment Method</th>
+                        <td><input type="text" name="payment-method" /></td>
+                    </tr>
+                    <tr>
+                        <th>Special Request (subject to availability)</th>
+                        <td><input type="text" name="special-request" /></td>
+                    </tr>
+                    <tr>
+                        <th>Total Price</th>
+                        <td><input type="text" name="total-price" /></td>
+                    </tr>
+                    <tr>
+                        <th>Deposit & Prepayment</th>
+                        <td><input type="text" name="deposit-prepayment" /></td>
+                    </tr>
+                    <tr>
+                        <th>Cancellation & No Show</th>
+                        <td><input type="text" name="cancellation-no-show" /></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="important-items">
+                <h2>Important items to bring to the hotel:</h2>
+                <ul>
+                    <li>For Thai citizens, please bring your Personal Identification (ID) Card.</li>
+                    <li>For non-Thai citizens, please bring your passport.</li>
+                </ul>
+                <p>According to Thai law, you need to present this information; otherwise, the hotel will not be able to
+                    check you in.</p>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="header">
+        <img src="2.jpg" alt="Royal Cliff Beach Hotel Logo">
+
+        <div class="content">
+            <div class="important-items">
+                <ul>
+                    <li>You can indulge in Royal Cliff’s International cuisine and signature dishes in our award-winning
+                        restaurants around the resort. In-room dining is available 24 hours daily for your convenience.
+                    </li>
+                    <br>
+                    <li>In-room dining service is available for you to enjoy whilst relaxing in front of the TV. Our
+                        menu have been expanded and includes many of Royal Cliff’s signature dishes. Our food hygiene is
+                        at the highest level and we have been certified by ISO and Food Safety Management. We can also
+                        cater to different dietary requirements, please inform our friendly staff. You can contact our
+                        Room Service by dialing “4” or you can order via the in-room IPTV service.</li>
+                    <br>
+                    <li>For your health and fitness, we have an excellent sports club,<a
+                            href="https://www.royalcliff.com/facilities/fitz-club/" target="_blank">Fitz
+                            Club</a> which is considered as one of the best racquets and gym venues in Pattaya.</li><br>
+                    <li>For a relaxing and soothing experience, you must visit our <a
+                            href="https://www.royalcliff.com/facilities/cliff-spa/" target="_blank">Cliff Spa </a> which
+                        is located at the Royal Cliff Grand Hotel on the 6th floor and the Royal Wing Suites & Spa on
+                        the 2nd Floor. We have a variety of treatments for you to enjoy at excellent value for money. To
+                        book or view our treatment options, please <a
+                            href="https://www.royalcliff.com/facilities/cliff-spa/" target="_blank">click here.</a></li>
+                    <br>
+                    <li>Children love Royal Cliff. There are many activities to entertain the little ones here.<a
+                            href="https://www.royalcliff.com/facilities/funtasea/" target="_blank">Funtasea - Kids</a>
+                        World offers indoor and outdoor activities for the whole family to enjoy. For the older ones, <a
+                            href="https://www.royalcliff.com/facilities/the-verge/" target="_blank">The Verge</a> offers
+                        interactive elements such as game stations, pool tables and a new karaoke lounge. While we
+                        accept walk-in guests, it is advisable to book an appointment beforehand.</li><br>
+                    <li>With our well-kept private green park within the gated property, luxury private beaches and
+                        multiple pools overlooking the Coral Island and the Gulf of Thailand, we have more than enough
+                        space for you to maintain social distancing.</li><br>
+                    <li>To learn about all the facilities that we offer, please <a
+                            href="https://www.royalcliff.com/facilities/" target="_blank">click here.</a> Advance
+                        booking with Guest Relations is required.</li><br>
+                    <li>Don't feel like going back home just yet? Book an extra night and enjoy your stay even further!
+                        You may send an email to <a
+                            href="mailto:reservations@royalcliff.com">reservations@royalcliff.com</a> or contact the
+                        reception by dialing “3” from your room telephone and we promise to give you the best rate.</li>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <img src="3.jpg" alt="Royal Cliff Beach Hotel Logo">
+
+        <div class="content">
+            <div class="important-items">
+                <ul>
+                    <li>Rates quoted are inclusive of government taxes and service charge.</li>
+                    <br>
+                    <li>Check-in time is from 3:00 pm onwards and check out time is before 12:00 pm (mid-day). Please
+                        inform us of your expected arrival time in advance by replying to this email or calling us.</li>
+                    <br>
+                    <li>Guarantee Policy: A valid credit card is required at time of booking and the same credit card
+                        must be presented at time of check-in.</li><br>
+                    <li>Early Check-In & Late Check-Out are subjected to room availability and require advance request.
+                        Additional fees may be applied.</li><br>
+                    <li>Early Check-Out: The hotel reserves the right to charge an early departure fee in the event a
+                        guest departs earlier than the original departure date.</li><br>
+                    <li>Child Policy: Children under 12 years old stay free of charge when using existing beds. A baby
+                        cot for one infant is also offered on a complimentary basis. If a roll away / extra bed is
+                        required, charges will apply. 50% discount on buffet breakfast applies for children from 5 to 11
+                        years old and free of charge for children under 5 years.</li><br>
+                    <li>When booking the limousine service, if you fail to show up or notify us of a cancellation, you
+                        will be charged the full price.</li><br>
+                    <li>In order to have a smooth check-in process, we would like to remind everyone to bring this
+                        confirmation letter to be presented at the reception upon arrival.</li><br>
+                    <li>Smoking is not allowed in guest rooms according to the Thai Law.</li><br>
+                    <li>We regret to inform you that pets are not permitted inside the property. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <img src="4.jpg" alt="Royal Cliff Beach Hotel Logo">
+        <footer class="footer">
+            <p1>Royal Cliff Hotels Group</p1><br>
+            <p1>353 Phra Tamnuk Road, Pattaya, Chonburi, Thailand 20150</p1><br>
+            <p1>Tel: (+66) 38 250421 | LINE:<a href="https://line.me/ti/p/@royalcliff" target="_blank"
+                    title="LINE">@royalcliff</a></p1><br>
+            <p1>Email:<a href="mailto:info@royalcliff.com">relax@royalcliff.com</a></p1><br><br>
+            <p1>Have You Connected With Us?</p1>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/royalcliff" target="_blank" title="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/royalcliff" target="_blank" title="Facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                        alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/user/TheRoyalCliff" target="_blank" title="YouTube">
+                    <img src="https://cdn.taximail.com/asset/core/s-color-youtube-96.png" alt="YouTube">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
